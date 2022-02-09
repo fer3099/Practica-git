@@ -1,0 +1,78 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/shit3.css"/>
+		<script>
+			function redi1()
+			{
+				location="consulta.php";
+			}
+			function redi()
+			{
+				location="../loginpaginasserver/index.php";
+			}
+//			function recargar()
+//			{
+//				location.reload();
+//			}
+		</script>
+	</head>
+	<body>
+		<div class="contenedor">
+			<h1>Eliminar</h1>
+			<form action="../bdserver/bajasserver.php" method="POST" class="formulario">
+				<label for="num">
+					<span>Id producto:</span>
+				</label>
+				<input type="text"  name="num" id="num"/>
+				<input type="submit" value="Borrar" class="button"/>
+			</form>
+		</div>
+		<div class="contenedor">
+			<h1>Insertar</h1>
+			<form action="../bdserver/altasserver.php" method="POST" class="formulario">
+				<label for="num1">
+					<span>Producto:</span>
+				</label>
+				<input type="text"  name="num1" id="num1"/>
+				<label for="num2">
+					<span>Precio:</span>
+				</label>
+				<input type="text"  name="num2" id="num2"/>
+				<label for="num3">
+					<span>Marca:</span>
+				</label>
+				<input type="text"  name="num3" id="num3"/>
+				<input type="submit" value="Agregar" class="button"/>
+			</form>
+		</div>
+		<div class="contenedor">
+			<h1>Modificar</h1>
+			<form action="../bdserver/modificacionesserver.php" method="POST" class="formulario">
+				<label for="num">
+					<span>Id producto:</span>
+				</label>
+				<input type="text"  name="num" id="num"/>
+				<label for="num1">
+					<span>Modificar nombre:</span>
+				</label>
+				<input type="text"  name="num1" id="num1"/>
+				<label for="num2">
+					<span>Modificar precio:</span>
+				</label>
+				<input type="text"  name="num2" id="num2"/>
+				<label for="num3">
+					<span>Modificar marca:</span>
+				</label>
+				<input type="text"  name="num3" id="num3"/>
+				<input type="submit" value="Agregar" class="button"/>
+			</form>
+		</div>
+		<div class="contenedor">
+			<h1>Consulta</h1>
+			<form action="consulta.php" method="POST" class="formulario">
+				<input type="button" value="Realiza consulta" onclick="redi1()" class="button"/>
+				<input type="button" value="Salir" onclick="redi()" class="button"/>
+			</form>
+		</div>
+	</body>
+</html>
