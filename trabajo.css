@@ -1,0 +1,76 @@
+.Contenedor{
+
+    position:absolute;
+    top:50px;
+    left:550px;
+    width: 600px;
+    height: 700px;
+    background-color: white;
+    border-radius: 5%;
+}
+h1{
+    color: orange;
+    text-align: center;
+    font-size: 50px;
+}
+
+.CuadroHamburguesa{
+    position: absolute;
+    top: 150px;
+    left: 30px;
+    width: 250px;
+    height: 250px;
+    background-color: orangered;
+    border-radius: 5%;
+    transition:1s;
+}
+.CuadroHamburguesa:hover{
+    transform:scale(1.1);
+}
+.ImagenHamburguesa img{
+    position: absolute;
+    top: 200px;
+    left: 80px;
+    width: 150px;
+    height: 150px;
+}
+.CuadroBebida{
+    position: absolute;
+    top: 150px;
+    left: 320px;
+    width: 250px;
+    height: 250px;
+    background-color: orangered;
+    border-radius: 5%;
+    transition:1s;
+}
+.CuadroBebida:hover{
+    transform:scale(1.1);
+}
+.ImagenBebida img{
+    position: absolute;
+    top: 200px;
+    left: 370px;
+    width: 150px;
+    height: 150px;
+}
+.CuadroEnsalada{
+    position: absolute;
+    top: 420px;
+    left: 170px;
+    width: 250px;
+    height: 250px;
+    background-color: orangered;
+    border-radius: 5%;
+    transition:1s;
+}
+.CuadroEnsalada:hover{
+    transform:scale(1.1);
+}
+.ImagenEnsalada img{
+    position: absolute;
+    top: 470px;
+    left: 215px;
+    width: 150px;
+    height: 150px;
+}
